@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="webservices.js"></script>
+</head>
+<body onload="charger_crayons()">
+	<h2>Liste des crayons</h2>
+	<ul id="liste_crayons"></ul>
+	
+	<p id="message_holder"></p>
+	
+	<input type="text" id="stylo_id" placeholder="Identifiant du stylo"/>
+	<input type="text" id="stylo_type" placeholder="Type du stylo"/>
+	<input type="text" id="stylo_couleur" placeholder="Couleur du stylo"/>
+	<br>
+	<input type="button" value="Ajouter un crayon" onclick="ajouter_crayon()">
+	<input type="button" value="Modifier un crayon" onclick="modifier_crayon()">
+	<input type="button" value="Supprimer un crayon" onclick="supprimer_crayon()">
+	
+	<template id="ligne_crayon">
+		<li></li>
+	</template>
+</body>
+</html>
